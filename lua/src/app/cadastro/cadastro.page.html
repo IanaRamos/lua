@@ -1,0 +1,42 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>Cadastro</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+    <ion-item text-center>
+        <ion-label>
+          <ion-icon name="moon" class="logo"></ion-icon>
+        </ion-label>
+      </ion-item>
+
+      <h4>Cadastre</h4>
+  <ion-grid>
+      <ion-row class="estilo">
+          <ion-icon name="contact"></ion-icon>
+          <ion-input type="text"></ion-input>
+      </ion-row>
+      <ion-row class="estilo">
+      <ion-icon name="mail"></ion-icon>
+      <ion-input type="mail"></ion-input>
+      </ion-row>
+      <ion-row class="estilo">
+          <ion-icon name="key"></ion-icon>
+          <ion-input type="password"></ion-input>
+          </ion-row>
+    </ion-grid>
+  
+    <ion-button 
+      expand="block"
+      shape="round"
+      style="margin-top: 10px"
+      color="medium">Registrar</ion-button>
+
+      <ion-button 
+      expand="block"
+      shape="round"
+      style="margin-top: 10px"
+      routerLink="/login"
+      color="medium">Já tenho cadastro</ion-button>
+</ion-content>

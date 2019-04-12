@@ -1,0 +1,40 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>login</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content padding>
+  <ion-item text-center>
+    <ion-label>
+      <ion-icon name="moon" class="logo"></ion-icon>
+    </ion-label>
+  </ion-item>
+
+  <h1>Aplicativo Lua</h1>
+  <h5>Faça o seu login</h5>
+
+  <ion-grid>
+    <ion-row class="estilo">
+    <ion-icon name="mail"></ion-icon>
+    <ion-input type="mail"></ion-input>
+    </ion-row>
+    <ion-row class="estilo">
+        <ion-icon name="key"></ion-icon>
+        <ion-input type="password"></ion-input>
+        </ion-row>
+  </ion-grid>
+
+  <ion-button 
+      expand="block"
+      shape="round"
+      style="margin-top: 10px"
+      color="medium">Entrar</ion-button>
+
+      <ion-button 
+      expand="block"
+      shape="round"
+      style="margin-top: 10px"
+      routerLink="/cadastro"
+      color="medium">Cadastrar</ion-button>
+</ion-content>
