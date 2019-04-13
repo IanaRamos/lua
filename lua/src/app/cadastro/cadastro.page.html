@@ -11,19 +11,19 @@
         </ion-label>
       </ion-item>
 
-      <h4>Cadastre</h4>
+      <h4>Cadastre {{ displayname}}</h4>
   <ion-grid>
       <ion-row class="estilo">
           <ion-icon name="contact"></ion-icon>
-          <ion-input type="text"></ion-input>
+          <ion-input type="text" [(ngModel)]="displayname"></ion-input>
       </ion-row>
       <ion-row class="estilo">
       <ion-icon name="mail"></ion-icon>
-      <ion-input type="mail"></ion-input>
+      <ion-input type="email" [(ngModel)]="email"></ion-input>
       </ion-row>
       <ion-row class="estilo">
           <ion-icon name="key"></ion-icon>
-          <ion-input type="password"></ion-input>
+          <ion-input type="password" [(ngModel)]="password"></ion-input>
           </ion-row>
     </ion-grid>
   
@@ -31,6 +31,7 @@
       expand="block"
       shape="round"
       style="margin-top: 10px"
+      (click)="cadastro()"
       color="medium">Registrar</ion-button>
 
       <ion-button 

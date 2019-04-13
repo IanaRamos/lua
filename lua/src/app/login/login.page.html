@@ -17,11 +17,11 @@
   <ion-grid>
     <ion-row class="estilo">
     <ion-icon name="mail"></ion-icon>
-    <ion-input type="mail"></ion-input>
+    <ion-input type="email" [(ngModel)]="email"></ion-input>
     </ion-row>
     <ion-row class="estilo">
         <ion-icon name="key"></ion-icon>
-        <ion-input type="password"></ion-input>
+        <ion-input type="password" [(ngModel)]="password"></ion-input>
         </ion-row>
   </ion-grid>
 
@@ -29,6 +29,7 @@
       expand="block"
       shape="round"
       style="margin-top: 10px"
+      (click)="login()"
       color="medium">Entrar</ion-button>
 
       <ion-button 

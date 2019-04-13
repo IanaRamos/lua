@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { AuthServiceService } from '../service/auth-service.service';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-cadastro',
@@ -7,9 +9,19 @@ import { Component, OnInit } from '@angular/core';
 })
 export class CadastroPage implements OnInit {
 
-  constructor() { }
+  displayname: string;
+  email: string;
+  password: string;
+
+  constructor(private authService: AuthServiceService, private router:Router) { }
 
   ngOnInit() {
+  }
+
+  cadastro(){
+    this.authService.cadastro(this.displayname, this.email, this.password).then(res =>{
+      this.router.navigate(['/login']);
+    });
   }
 
 }
