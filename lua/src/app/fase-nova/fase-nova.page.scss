@@ -1,8 +1,19 @@
 ion-content{
-    --ion-background-color: var(--ion-color-dark)
+    --ion-background-color: var(--ion-color-dark);
+    --background: some daqui;
 }
 
 p{
     text-align: center;
-    color: white 
+    color: white;
+    max-width: 500px;
+    display: inline-block;
+}
+
+h2 {
+    color: white;
+}
+
+.estrelado {
+    background-image: url("/assets/estrelas.jpg");
 }

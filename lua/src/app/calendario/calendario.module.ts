@@ -23,4 +23,6 @@ const routes: Routes = [
   ],
   declarations: [CalendarioPage]
 })
-export class CalendarioPageModule {}
+export class CalendarioPageModule {
+  mes = "Maio";
+}
