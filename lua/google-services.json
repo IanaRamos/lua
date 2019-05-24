@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "421739396715",
+    "firebase_url": "https://lualua-7e1d1.firebaseio.com",
+    "project_id": "lualua-7e1d1",
+    "storage_bucket": "lualua-7e1d1.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:421739396715:android:696591ed2922cda8",
+        "android_client_info": {
+          "package_name": "com.iana.lua"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "421739396715-9iihnhj6h2b1j059cl8peur671tfbt6b.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAwv-94sHcrsxGLynasTi7uA0r50KMAOWc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "421739396715-9iihnhj6h2b1j059cl8peur671tfbt6b.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

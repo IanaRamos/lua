@@ -14,10 +14,6 @@ const routes: Routes = [
     loadChildren: './home/home.module#HomePageModule',
     canActivate: [AuthGuard]
   },
-  {
-    path: 'list',
-    loadChildren: './list/list.module#ListPageModule'
-  },
   { 
     path: 'calendario',
     loadChildren: './calendario/calendario.module#CalendarioPageModule'

@@ -4,6 +4,8 @@ import { Platform } from '@ionic/angular';
 import { SplashScreen } from '@ionic-native/splash-screen/ngx';
 import { StatusBar } from '@ionic-native/status-bar/ngx';
 
+import { OneSignal } from '@ionic-native/onesignal/ngx';
+
 @Component({
   selector: 'app-root',
   templateUrl: 'app.component.html'
@@ -15,11 +17,7 @@ export class AppComponent {
       url: '/home',
       icon: 'home'
     },
-    {
-      title: 'List',
-      url: '/list',
-      icon: 'list'
-    },
+
     {
       title: 'Calendário',
       url: '/calendario',
@@ -31,7 +29,8 @@ export class AppComponent {
   constructor(
     private platform: Platform,
     private splashScreen: SplashScreen,
-    private statusBar: StatusBar
+    private statusBar: StatusBar,
+    private oneSignal: OneSignal,
   ) {
     this.initializeApp();
   }
@@ -40,6 +39,19 @@ export class AppComponent {
     this.platform.ready().then(() => {
       this.statusBar.styleDefault();
       this.splashScreen.hide();
+
+      if (this.platform.is('cordova')) {
+        this.setupPush();
+      }
     });
+  }
+
+  setupPush() {
+    // I recommend to put these into your environment.ts
+    this.oneSignal.startInit('a00a8228-d9e4-4682-9128-475311b5a1b2', '421739396715');
+ 
+    this.oneSignal.inFocusDisplaying(this.oneSignal.OSInFocusDisplayOption.None);
+ 
+    this.oneSignal.endInit();
   }
 }

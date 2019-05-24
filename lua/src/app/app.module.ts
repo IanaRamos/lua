@@ -13,6 +13,9 @@ import { environment } from '../environments/environment';
 import { AngularFireModule} from '@angular/fire';
 import { AngularFireAuthModule} from '@angular/fire/auth';
 
+import { OneSignal } from '@ionic-native/onesignal/ngx';
+
+
 @NgModule({
   declarations: [AppComponent],
   entryComponents: [],
@@ -26,7 +29,8 @@ import { AngularFireAuthModule} from '@angular/fire/auth';
   providers: [
     StatusBar,
     SplashScreen,
-    { provide: RouteReuseStrategy, useClass: IonicRouteStrategy }
+    { provide: RouteReuseStrategy, useClass: IonicRouteStrategy },
+    OneSignal
   ],
   bootstrap: [AppComponent]
 })

@@ -1,7 +1,7 @@
 <ion-header>
   <ion-toolbar>
     <ion-buttons slot="start">
-      <ion-menu-button></ion-menu-button>
+      <ion-menu-button>oooooo</ion-menu-button>
     </ion-buttons>
     <ion-title>
       Home
@@ -10,6 +10,7 @@
 </ion-header>
 
 <ion-content>
+  <ion-button [routerLink]="['/calendario']">Ir para o Calendário</ion-button>
   <ion-button (click)="logout()">Sair</ion-button>
     <ion-card class="welcome-card">
       <ion-img src="/assets/minguante.svg"></ion-img>
@@ -18,5 +19,4 @@
         <ion-card-title>Bem vindo ao aplicativo de Lua</ion-card-title>
       </ion-card-header>
     </ion-card>
-    <ion-button [routerLink]="['/calendario']">Ir para o Calendário</ion-button>
 </ion-content>

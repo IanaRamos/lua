@@ -1,5 +1,7 @@
 {
   "name": "lua",
-  "integrations": {},
+  "integrations": {
+    "cordova": {}
+  },
   "type": "angular"
 }
